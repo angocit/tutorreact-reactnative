@@ -15,8 +15,8 @@ app.use('/api/cart',cartRouter)
 app.use('/api/order',orderRouter)
 const port = 8000
 const connectdb = async ()=>{
-    try {
-        await mongoose.connect('mongodb://localhost:27017/tutorial')
+    try {        
+        await mongoose.connect('mongodb+srv://angocit:123456abcd@angocit.ut5vjtz.mongodb.net/?retryWrites=true&w=majority&appName=angocit')
         console.log('Connect db successfully');
     } catch (error) {
         console.log('Can not connect to DB');
